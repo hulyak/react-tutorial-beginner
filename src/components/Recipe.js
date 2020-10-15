@@ -15,7 +15,7 @@ const Recipe = ({label, calories, image, url, ingredients}) => {
 
       <p>{calories}</p>
       <img src={image} alt={label} />
-      <a href={url} target="_blank" rel="noopener noreferrer">
+      <a href={url} target="_blank">
         URL
       </a>
       <button>Ingredients</button>
@@ -24,5 +24,3 @@ const Recipe = ({label, calories, image, url, ingredients}) => {
 };
 
 export default Recipe;
-
-// noopener noreferrer => for security reasons
