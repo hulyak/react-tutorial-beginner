@@ -1,7 +1,8 @@
-body {
+* {
   padding: 50px;
-  background-color: #dddddd;
   font-family: sans-serif;
+  background-color: #b198b5;
+  background-image: url('https://www.transparenttextures.com/patterns/black-thread-light.png');
 }
 
 .container {
@@ -11,17 +12,30 @@ body {
   margin: 0 auto;
   max-width: 1170px;
 }
+
+h1 {
+  color: #371e30;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
 .btn {
-  display: inline-block;
-  color: black;
+  display: block;
+  margin: 0 auto;
+  color: #fff;
   padding: 0.25rem 0.75rem;
   border-color: transparent;
   text-transform: capitalize;
-  font-size: 1rem;
+  font-size: 1.4rem;
   margin-top: 2rem;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
   cursor: pointer;
+}
+
+.btn:hover {
+  border: 1px solid #df57bc;
+  background-color: #df57bc;
+  color: #fff;
 }
 
 .item {
@@ -33,6 +47,10 @@ body {
 }
 
 .formContainer {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
@@ -43,7 +61,26 @@ input[type='text'] {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: none;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+.recipe {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.recipes {
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgb(71, 71, 71);
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #fff;
+  background: white;
+  align-items: center;
+  min-width: 40%;
+  flex-wrap: wrap;
 }

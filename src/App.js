@@ -4,7 +4,7 @@ import './App.css';
 // import ExampleComponent from './components/ExampleComponent';
 // import ExampleComponent2 from './components/ExampleComponent2';
 // import ExampleComponent3 from './components/ExampleComponent3';
-import JokeDemo from './components/JokeDemo';
+import FoodRecipe from './components/FoodRecipe';
 
 const App = () => {
   return (
@@ -12,7 +12,8 @@ const App = () => {
       {/* <ExampleComponent /> */}
       {/* <ExampleComponent2 /> */}
       {/* <ExampleComponent3 /> */}
-      <JokeDemo />
+
+      <FoodRecipe />
     </div>
   );
 };
