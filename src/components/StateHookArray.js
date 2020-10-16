@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 // with arrays use map
-const ExampleComponent2 = () => {
+const StateHookArray = () => {
   const [items, setItems] = useState([
     {id: 1, listItem: 'go on a holiday'},
     {id: 2, listItem: 'go hiking'},
@@ -47,4 +47,4 @@ const ExampleComponent2 = () => {
   );
 };
 
-export default ExampleComponent2;
+export default StateHookArray;

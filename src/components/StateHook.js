@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-const ExampleComponent = () => {
+const StateHook = () => {
   const [title, setTitle] = useState('hello world');
 
   console.log(useState());
@@ -21,4 +21,4 @@ const ExampleComponent = () => {
   );
 };
 
-export default ExampleComponent;
+export default StateHook;

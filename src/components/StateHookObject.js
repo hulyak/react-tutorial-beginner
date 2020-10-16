@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-const ExampleComponent3 = () => {
+const StateHookObject = () => {
   const [name, setName] = useState({firstName: '', lastName: ''});
 
   return (
@@ -24,4 +24,4 @@ const ExampleComponent3 = () => {
   );
 };
 
-export default ExampleComponent3;
+export default StateHookObject;
