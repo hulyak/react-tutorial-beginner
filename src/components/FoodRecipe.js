@@ -2,10 +2,8 @@ import React, {useState, useEffect} from 'react';
 import Recipe from './Recipe';
 
 const FoodRecipe = () => {
-  // create a state for search query
-  const [search, setSearch] = useState('');
   const [recipes, setRecipes] = useState([]);
-  // make a search with user's query
+  const [search, setSearch] = useState('');
   const [query, setQuery] = useState('');
 
   const APP_ID = '563ef9b6';
@@ -23,31 +21,31 @@ const FoodRecipe = () => {
     console.log(result);
     // get the result from API
     setRecipes(result.hits);
-    // clear the input when we submit the form
-    setSearch('');
   };
 
-  // make search when the form is submit
   const onSubmit = (e) => {
     e.preventDefault();
-    // update the state with the search input
     setQuery(search);
+    // empty the input field after making search
+    setSearch('');
   };
 
   return (
     <div>
       <h1>Food Recipe App </h1>
-      <form onSubmit={onSubmit} className="formContainer">
+      <form onSubmit={onSubmit}>
         <input
           type="text"
+          placeholder="Search for recipes"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          autoComplete="off"
-          placeholder="Search Food"
         />
-        <input type="submit" className="btn" value="Search" />
+        <button type="submit" className="btn">
+          Search
+        </button>
       </form>
-      <div className="recipe">
+      <div className="recipes">
+        {/* map over our array */}
         {recipes !== [] &&
           recipes.map((recipe) => (
             <Recipe

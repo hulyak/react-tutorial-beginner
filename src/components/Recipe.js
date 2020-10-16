@@ -3,22 +3,20 @@ import React from 'react';
 // inside recipe object destructure label,etc
 const Recipe = ({label, calories, image, url, ingredients}) => {
   return (
-    <div className="recipes">
+    <div className="recipe">
       <h2>{label}</h2>
-      <div>
-        <ul>
+      <div className="recipe__list">
+        <ol>
           {ingredients.map((ingredient) => (
             <li key={ingredient.text}>{ingredient.text}</li>
           ))}
-        </ul>
+        </ol>
       </div>
-
-      <p>{calories}</p>
-      <img src={image} alt={label} />
-      <a href={url} target="_blank">
-        URL
+      <a href={url} target="_blank" rel="noopener noreferrer">
+        Check the recipe!
       </a>
-      <button>Ingredients</button>
+      <p>Calories: {Math.floor(calories)}</p>
+      <img src={image} alt={label} />
     </div>
   );
 };

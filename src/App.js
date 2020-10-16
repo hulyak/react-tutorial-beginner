@@ -4,8 +4,7 @@ import './App.css';
 // import ExampleComponent from './components/ExampleComponent';
 // import ExampleComponent2 from './components/ExampleComponent2';
 // import ExampleComponent3 from './components/ExampleComponent3';
-// import FoodRecipe from './components/FoodRecipe';
-import FoodRecipe from './components/test';
+import FoodRecipe from './components/FoodRecipe';
 
 const App = () => {
   return (
