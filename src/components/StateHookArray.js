@@ -18,32 +18,35 @@ const StateHookArray = () => {
       ...items,
       {
         id: 4,
-        listItem: 'finish deadlines',
+        listItem: 'meet deadlines',
       },
     ]);
   };
 
   return (
-    <>
-      {items.map((item) => {
-        const {id, listItem} = item;
-        return (
-          <div key={id} className="item">
-            <h4>{listItem}</h4>
-            <button className="btn" onClick={() => removeItem(id)}>
-              remove
-            </button>
-          </div>
-        );
-      })}
-
-      <button className="btn" onClick={() => setItems([])}>
-        Delete all
-      </button>
-      <button className="btn" onClick={() => addItem()}>
-        Add Item
-      </button>
-    </>
+    <div className="ui container">
+      <br />
+      <div className="ui two column grid">
+        {items.map((item) => {
+          const {id, listItem} = item;
+          return (
+            <div key={id} className="ui row">
+              <h4 className="column">{listItem}</h4>
+              <button className="four wide column btn" onClick={() => removeItem(id)}>
+                remove
+              </button>
+            </div>
+          );
+        })}
+      </div>
+        <button className="btn" onClick={() => setItems([])}>
+          Delete all
+        </button>
+        <button className="btn" onClick={() => addItem()}>
+          Add Item
+        </button>
+      </div>
+    
   );
 };
 
