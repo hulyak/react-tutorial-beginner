@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function UseEffectDependency() {
+const UseEffectDependency = () => {
 	const [ count, setCount ] = useState(0);
 	const [ isOn, setIsOn ] = useState(false);
 
@@ -24,6 +24,6 @@ function UseEffectDependency() {
 			<button onClick={handleClick}>Click me</button>
 		</div>
 	);
-}
+};
 
 export default UseEffectDependency;

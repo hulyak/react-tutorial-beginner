@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function UseEffect() {
+const UseEffect = () => {
 	const [ count, setCount ] = useState(0);
 	const [ isOn, setIsOn ] = useState(false);
 
@@ -20,6 +20,6 @@ function UseEffect() {
 			<button onClick={handleClick}>Click me</button>
 		</div>
 	);
-}
+};
 
 export default UseEffect;

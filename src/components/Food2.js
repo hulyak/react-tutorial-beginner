@@ -1,4 +1,7 @@
-const FoodRecipe = () => {
+import React, { useState, useEffect } from 'react';
+import Recipe from './Recipe';
+
+const Food2 = () => {
 	const [ search, setSearch ] = useState('');
 	const [ query, setQuery ] = useState('');
 	const [ isLoading, setIsLoading ] = useState(false);
@@ -43,6 +46,7 @@ const FoodRecipe = () => {
 		// query the search term
 		setQuery(search);
 	}
+	
 	return (
 		<div>
 			<h1>Food Recipe App </h1>
@@ -63,6 +67,6 @@ const FoodRecipe = () => {
 	);
 };
 
-export default FoodRecipe;
+export default Food2;
 
 // https://api.edamam.com/search?q=chicken&app_id=563ef9b6&app_key=a6adea137d5513370559c5fc6f3f3a91

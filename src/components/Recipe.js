@@ -5,7 +5,7 @@ const Recipe = ({ label, calories, image, url, ingredients }) => {
 	return (
 		<div class="ui column grid">
 			<div className="column recipe">
-				<div class="content">
+				<div className="content">
 					<h2>{label}</h2>
 					<p>Calories: {Math.floor(calories)}</p>
 					<ul>{ingredients.map((ingredient) => <li key={ingredient.text}>{ingredient.text}</li>)}</ul>
@@ -13,7 +13,7 @@ const Recipe = ({ label, calories, image, url, ingredients }) => {
 						CHECK THE RECIPE!
 					</a>
 				</div>
-				<div class="ui fluid card">
+				<div className="ui fluid card">
 					<img src={image} alt={label} />
 				</div>
 			</div>

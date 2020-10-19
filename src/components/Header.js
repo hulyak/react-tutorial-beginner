@@ -7,11 +7,11 @@ function Header() {
 			<Link to="/" className="item">
 				State Hook
 			</Link>
-			<Link to="/state-array" className="item">
-				State Hook Array
-			</Link>
 			<Link to="/state-object" className="item">
 				State Hook Object
+			</Link>
+			<Link to="/state-array" className="item">
+				State Hook Array
 			</Link>
 			<Link to="/use-effect" className="item">
 				useEffect

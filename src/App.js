@@ -21,11 +21,11 @@ export default function App() {
 					<Route path="/" exact>
 						<StateHook />
 					</Route>
-					<Route path="/state-array">
-						<StateHookArray />
-					</Route>
 					<Route path="/state-object">
 						<StateHookObject />
+					</Route>
+					<Route path="/state-array">
+						<StateHookArray />
 					</Route>
 					<Route path="/use-effect">
 						<UseEffect />
