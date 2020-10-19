@@ -3,7 +3,7 @@ import React from 'react';
 // inside recipe object destructure label,etc
 const Recipe = ({ label, calories, image, url, ingredients }) => {
 	return (
-		<div class="ui column grid">
+		<div className="ui column grid">
 			<div className="column recipe">
 				<div className="content">
 					<h2>{label}</h2>

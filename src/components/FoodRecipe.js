@@ -21,7 +21,7 @@ const FoodRecipe = () => {
 	const getData = async () => {
 		const response = await fetch(url);
 		const result = await response.json();
-		console.log(result);
+		// console.log(result);
 		// get the result from API
 		setRecipes(result.hits);
 	};
