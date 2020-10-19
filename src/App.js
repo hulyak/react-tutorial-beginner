@@ -8,7 +8,6 @@ import StateHookObject from './components/StateHookObject';
 import FoodRecipe from './components/FoodRecipe';
 import Cleanup from './components/Cleanup';
 import UseEffect from './components/UseEffect';
-import UseEffectDependency from './components/UseEffectDependency';
 
 import './App.css';
 
@@ -29,9 +28,6 @@ export default function App() {
 					</Route>
 					<Route path="/use-effect">
 						<UseEffect />
-					</Route>
-					<Route path="/use-effect-dependency">
-						<UseEffectDependency />
 					</Route>
 					<Route path="/cleanup">
 						<Cleanup />

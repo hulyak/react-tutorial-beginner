@@ -16,9 +16,6 @@ function Header() {
 			<Link to="/use-effect" className="item">
 				useEffect
 			</Link>
-			<Link to="/use-effect-dependency" className="item">
-				Dependency
-			</Link>
 			<Link to="/cleanup" className="item">
 				Cleanup
 			</Link>
